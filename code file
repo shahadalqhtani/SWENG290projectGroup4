@@ -3,6 +3,7 @@
    a. Username
    b. Password
    c. confirm password
+   d.email
 3. Validate the user input:
    a. Check if all required fields are filled (Username, Password, Email).
    b. Check if the Password and Confirm Password fields match.
@@ -10,7 +11,7 @@
 4. If validation fails, display error messages and return to step 1.
 5. If validation succeeds, continue to the next step.
 6. Process the sign-up data:
-   a. Store the user's information in a database (username, password).
+   a. Store the user's information in a database (username, password,email).
    b. Optionally, hash the password for security.
    c. Generate a unique user ID.
 7. Display a success message to the user.
