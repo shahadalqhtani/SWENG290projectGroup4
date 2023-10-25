@@ -86,3 +86,34 @@ JavaScript:
 CSS:
 13. Style the page, the `<select>`, and the `<video>` element to provide a pleasant user experience.
 
+
+
+feature(Exams)
+
+1. Create a new app page for the quiz.
+
+2. Initialize variables to keep track of the user's score and selected answers.
+
+3. Define an array to store the quiz questions and answer choices.
+
+4. Populate the app with questions and answer choices from the array.
+
+5. Display the first question and its answer choices.
+
+6. Allow the user to select an answer for the current question.
+
+7. When the user selects an answer, store their selection in the "selectedAnswer" variable.
+
+8. When the user clicks the "Next" button, check if all questions have been answered.
+
+9. If there are more questions, move to the next question, display it along with answer choices, and store the selected answer.
+
+10. Repeat steps 6-9 for each question in the quiz.
+
+11. After all questions have been answered, calculate the user's score by comparing their selected answers to the correct answers.
+
+12. Display the user's score to the user.
+
+13. Provide a way for the user to restart or exit the quiz.
+
+14. Style the app to make it visually appealing and user-friendly.
