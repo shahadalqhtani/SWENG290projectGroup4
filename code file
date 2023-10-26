@@ -265,3 +265,68 @@ feature(Games)
 
 10. Implement additional features, levels, and challenges for each game as needed.
 
+Assignemnt Feature {
+
+Method Admin_Create_Assignment
+    Input: Admin ID, Course ID, Assignment Details
+    Output: Confirmation message and status (success or failure)
+
+    Begin
+        If Admin ID and Course ID exist Then
+            Save the new assignment details in the database associated with the Course ID
+            Return "Assignment created successfully"
+        Else
+            Return "Admin ID or Course ID does not exist"
+        End If
+    End
+
+
+Method View_Assignment
+    Input: Student ID, Course ID
+    Output: Display of assignment details or an error message
+
+    Begin
+        If both Student ID and Course ID exist Then
+            If the student is enrolled in the course Then
+                Retrieve and display the list of assignments associated with the Course ID from the database
+            Else
+                Return "Student is not enrolled in the course"
+            End If
+        Else
+            Return "Student ID or Course ID does not exist"
+        End If
+    End
+
+
+Method Submit_Assignment
+    Input: Student ID, Course ID, Assignment ID, Submission data
+    Output: Confirmation message and status (success or failure)
+
+    Begin
+        If Student ID, Course ID, and Assignment ID exist and the student is enrolled in the Course Then
+            If Submission data is in the correct format Then
+                Save the student's submission data for the assignment in the database
+                Return "Assignment submitted successfully"
+            Else
+                Return "Invalid data format for submission"
+            End If
+        Else
+            Return "Student ID, Course ID, or Assignment ID does not exist, or Student is not enrolled in the course"
+        End If
+    End
+
+
+Method Student_Check_Score
+    Input: Student ID, Course ID, Assignment ID
+    Output: Score or an error message
+
+    Begin
+        If Student ID, Course ID, and Assignment ID exist and the student is enrolled in the Course Then
+            Retrieve the student's score for the assignment from the database
+            Return "You received [Score] for this assignment"
+        Else
+            Return "Student ID, Course ID, or Assignment ID does not exist, or Student is not enrolled in the course"
+        End If
+    End
+
+}
