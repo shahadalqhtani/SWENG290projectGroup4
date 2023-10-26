@@ -196,3 +196,33 @@ feature(home page and course page)
 7. Provide the user with the option to continue to the course content or return to the app's main page.
 
 8. Style the course selection page to make it visually appealing and user-friendly.
+
+
+
+Multipupose strap
+
+1. Create a new app strap at the bottom of each main page in the App.
+
+2. Display the main navigation menu with the following options:
+   2.1. "Go to Home Page"
+   2.2. "Go to Course Page"
+   2.3. "Go to Profile Page"
+
+3. Allow the user to select one of the navigation options.
+
+4. When the user selects an option, determine which page to navigate to based on their choice.
+
+5. If the user chooses "Go to Home Page":
+   5.1. Redirect the user to the home page of the app.
+
+6. If the user chooses "Go to Course Page":
+   6.1. Redirect the user to the course page of the app.
+
+7. If the user chooses "Go to Profile Page":
+   7.1. Redirect the user to the profile page of the app.
+
+8. Style the app interface to make it visually appealing and user-friendly.
+
+9. Implement additional features and content for the home page, course page, and profile page as needed.
+
+
