@@ -226,3 +226,42 @@ Multipupose strap
 9. Implement additional features and content for the home page, course page, and profile page as needed.
 
 
+
+feature(Games)
+
+1. Create a new app page for coding games.
+
+2. Display a list of the available coding games to choose from:
+   2.1. "Correct the Code"
+   2.2. "Which Line?"
+   2.3. "Code with Us"
+
+3. Allow the user to select one of the coding games.
+
+4. Determine which game the user selected.
+
+5. If the user chooses "Correct the Code":
+   5.1. Present the user with a piece of code that contains an error.
+   5.2. Instruct the user to identify and correct the error.
+   5.3. Check the user's answer for correctness.
+   5.4. Provide feedback on whether the answer is correct.
+
+6. If the user chooses "Which Line?":
+   6.1. Display a code snippet.
+   6.2. Ask the user to type the number of a specific line in the code.
+   6.3. Check the user's answer for correctness.
+   6.4. Provide feedback on whether the answer is correct.
+
+7. If the user chooses "Code with Us":
+   7.1. Present the user with an empty code editor.
+   7.2. Provide a task or challenge that the user needs to solve by writing code.
+   7.3. Allow the user to write and run their code.
+   7.4. Check the user's code for correctness.
+   7.5. Provide feedback on whether the code is correct and functional.
+
+8. After completing a game, offer the option to play another game or return to the main app page.
+
+9. Style the coding games interface to make it visually appealing and user-friendly.
+
+10. Implement additional features, levels, and challenges for each game as needed.
+
