@@ -265,6 +265,7 @@ feature(Games)
 
 10. Implement additional features, levels, and challenges for each game as needed.
 
+
 Assignemnt Feature {
 
 Method Admin_Create_Assignment
@@ -329,4 +330,23 @@ Method Student_Check_Score
         End If
     End
 
+}
+
+
+Book Feature {
+Method Access_Books_Page
+    Input: Student ID, Course ID
+    Output: Display of books related to the course or an error message
+
+    Begin
+        If both Student ID and Course ID exist Then
+            If the student is enrolled in the course Then
+                Retrieve and display the list of books associated with the Course ID from the database
+            Else
+                Return "Student is not enrolled in the course"
+            End If
+        Else
+            Return "Student ID or Course ID does not exist"
+        End If
+    End
 }
