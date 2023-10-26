@@ -173,3 +173,26 @@ feature(settings)
 14. Allow the user to return to the app's main page or navigate to other settings.
 
 15. Style the "Settings" page to make it visually appealing and user-friendly.
+
+
+
+feature(home page and course page)
+
+1. Create a new app page for course selection.
+
+2. Display a list of available courses to choose from.
+
+3. Provide the following options:
+   3.1. "Java 1"
+   3.2. "Java 2"
+   3.3. "Data Structures"
+
+4. Allow the user to select one course from the list.
+
+5. When the user selects a course, store their selection in a variable, such as "selectedCourse."
+
+6. Display a confirmation message with the chosen course, such as "You have selected: [selectedCourse]."
+
+7. Provide the user with the option to continue to the course content or return to the app's main page.
+
+8. Style the course selection page to make it visually appealing and user-friendly.
