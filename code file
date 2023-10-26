@@ -117,3 +117,59 @@ feature(Exams)
 13. Provide a way for the user to restart or exit the quiz.
 
 14. Style the app to make it visually appealing and user-friendly.
+
+
+
+feature(settings)
+
+
+-----------after settings update------------
+
+1. Create a new app page for "Settings."
+
+2. Display the user's profile information and various account management options.
+
+3. Provide the following options:
+   3.1. "Delete Account"
+   3.2. "Sign Out"
+   3.3. "Change Email"
+   3.4. "Change Password"
+   3.5. "Change Name"
+
+4. If the user selects "Delete Account," show a confirmation dialog.
+
+5. If the user confirms the account deletion:
+   5.1. Prompt the user to enter their password for verification.
+   5.2. Verify the password against the stored password.
+   5.3. If the password is correct, delete the user's account.
+   5.4. Display a confirmation message and log the user out.
+
+6. If the user selects "Sign Out," show a confirmation dialog.
+
+7. If the user confirms signing out:
+   7.1. Clear the user's session or token to log them out.
+   7.2. Display a confirmation message.
+
+8. If the user selects "Change Email," provide a form to enter the new email.
+
+9. If the user confirms the email change:
+   9.1. Verify the new email for validity.
+   9.2. Update the user's email in the database.
+   9.3. Display a confirmation message.
+
+10. If the user selects "Change Password," provide a form to enter the new password.
+
+11. If the user confirms the password change:
+    11.1. Verify the current password for correctness.
+    11.2. Update the user's password in the database.
+    11.3. Display a confirmation message.
+
+12. If the user selects "Change Name," provide a form to enter the new name.
+
+13. If the user confirms the name change:
+    13.1. Update the user's name in the database.
+    13.2. Display a confirmation message.
+
+14. Allow the user to return to the app's main page or navigate to other settings.
+
+15. Style the "Settings" page to make it visually appealing and user-friendly.
