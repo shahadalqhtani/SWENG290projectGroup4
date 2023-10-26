@@ -117,3 +117,32 @@ feature(Exams)
 13. Provide a way for the user to restart or exit the quiz.
 
 14. Style the app to make it visually appealing and user-friendly.
+
+
+
+feature(settings)
+
+1. Create a new app page for "Settings."
+
+2. Display the user's profile information and options for account management.
+
+3. Provide two main options: "Delete Account" and "Sign Out."
+
+4. If the user selects "Delete Account," show a confirmation dialog.
+
+5. If the user confirms the account deletion:
+   5.1. Prompt the user to enter their password for verification.
+   5.2. Verify the password against the stored password.
+   5.3. If the password is correct, delete the user's account.
+   5.4. Display a confirmation message and log the user out.
+
+6. If the user selects "Sign Out," show a confirmation dialog.
+
+7. If the user confirms signing out:
+   7.1. Clear the user's session or token to log them out.
+   7.2. Display a confirmation message.
+
+8. Allow the user to return to the app's main page or provide a link to other settings.
+
+9. Style the "Settings" page to make it visually appealing and user-friendly.
+
