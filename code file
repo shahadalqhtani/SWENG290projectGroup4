@@ -387,4 +387,23 @@ help:
     15. End
 
 
+
+  
+feature(rate us)
+
+displayRateUs() {
+    // Display a message to the user to encourage feedback
+    showMessage("how would you rate us , tell us about your experiment:")
+}
+
+function saveUserFeedback(feedback) {
+    // Store the user's feedback, e.g., in a database
+    saveToDatabase(feedback)
+}
+
+function main() {
+    displayRateUs()
+
+End 
+    }
 }
