@@ -329,4 +329,34 @@ Method Student_Check_Score
         End If
     End
 
+
+feature(proflie)
+
+CreateUserProfile:
+    Input: user_name, email, date_of_sub
+    Output: user_profile
+
+    1. Create a new user_profile object
+    2. Set user_profile's user_name to the input user_name
+    3. Set user_profile's email to the input email
+    4. Set user_profile's date_of_birth to the input date_of_sub
+    5. Return user_profile
+
+DisplayUserProfile:
+    Input: user_profile
+    Output: None
+
+    1. Display "User Name: " + user_profile.user_name
+    2. Display "Email: " + user_profile.email
+    3. Display "Date of Birth: " + user_profile.date_of_birth
+
+UpdateUserProfile:
+    Input: user_profile, new_user_name, new_email, new_date_of_birth
+    Output: Updated user_profile
+
+    1. Set user_profile's user_name to new_user_name
+    2. Set user_profile's email to new_email
+    3. Set user_profile's date_of_sub to new_date_of_sub
+    4. Return user_profile
+ End
 }
