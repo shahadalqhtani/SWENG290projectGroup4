@@ -359,4 +359,32 @@ UpdateUserProfile:
     3. Set user_profile's date_of_sub to new_date_of_sub
     4. Return user_profile
  End
+
+
+
+
+feature(help)
+
+help:
+    Input: user_name, user_email, user_message
+    Output: confirmation_message
+
+    1. Display "Please provide the following information:"
+    2. Prompt the user to enter their email address (user_email).
+    3. Prompt the user to enter their message (user_message).
+
+    5. Validate user_email to ensure it is a valid email address.
+    6. If user_email is not a valid email address:
+        7. Display "Invalid email address. Please enter a valid email address."
+    8. Else:
+        9. Create a new contact_request object.
+        11. Set contact_request's user_email to user_email.
+        10. Set contact_request's user_message to user_message.
+        13. Save contact_request in a database or send it to the appropriate department for handling.
+
+        14. Display "submit"
+
+    15. End
+
+
 }
