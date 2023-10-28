@@ -410,9 +410,9 @@ End
 
 
 
-feature(Chat)
+feature(Discuss Board)
 
-1. Initialize Chat Page
+1. Initialize Discuss Board
    - Load user's chat history (messages, sender, timestamp).
 
 2. Send Message
