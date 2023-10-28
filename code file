@@ -447,3 +447,67 @@ feature(Chat)
 
 16. Design
     - Implement a user-friendly and intuitive design for the chat page.
+
+
+Book Feature {
+Method Access_Books_Page
+    Input: Student ID, Course ID
+    Output: Display of books related to the course or an error message
+
+    Begin
+        If both Student ID and Course ID exist Then
+            If the student is enrolled in the course Then
+                Retrieve and display the list of books associated with the Course ID from the database
+            Else
+                Return "Student is not enrolled in the course"
+            End If
+        Else
+            Return "Student ID or Course ID does not exist"
+        End If
+    End
+
+ method View_Books_info
+	Input: Student ID, Course ID
+    	Output: Display info related to the book or an error message
+	Begin
+        If both Student ID and Course ID exist Then
+            If the student is enrolled in the course Then
+                Retrieve and display the book page with a list of book associated with the Course ID from the database
+		each book with the book name and author
+            Else
+                Return "Student is not enrolled in the course"
+            End If
+        Else
+            Return "Student ID or Course ID does not exist"
+        End If
+    End
+method View_Books_details
+	Input: Student ID, Course ID, Book ID
+    	Output: Display details related to the book or an error message
+	Begin
+        If both Student ID,Course ID and Book ID exist Then
+            If the student is enrolled in the course Then
+                Retrieve and display the book page with that associated with the Course ID from the database
+		each book with the book name and author, book edition, year of release, and ISBN 
+            Else
+                Return "Student is not enrolled in the course"
+            End If
+        Else
+            Return "Student ID,Course ID or Book ID does not exist"
+        End If
+    End
+
+method Read_Book
+	Input: Student ID, Course ID, Book ID
+    	Output: Display book pagee or an error message
+	Begin
+        If both Student ID, Course ID and exist Then
+            If the student is enrolled in the course Then
+                Retrieve and display the book page that associated with the Course ID from the database 
+            Else
+                Return "Student is not enrolled in the course"
+            End If
+        Else
+            Return "Student ID,Course ID or Book ID does not exist"
+        End If
+    End
